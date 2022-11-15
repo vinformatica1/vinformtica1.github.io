@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+  <style>
+  h1 {
+    text-size: 20px;
+  }
+  </style>
+</head>
+
+<body>
+  <h1> Titel </h1>
+  <ul class="inhoud">
+    <li><a href="#">producten </a></li>
+    <li><a href="#">klantenservice</a></li>
+    <li><a href="#">item 3 </a></li>
+  </ul>
+</body>
