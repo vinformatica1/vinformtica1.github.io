@@ -101,12 +101,11 @@
     <p>Onze missie is om iedereen kennis te laten maken met de Schotse cultuur. De pracht van het schots dient iedereen te kennen. <br />
     <small>Luister hier naar de mooie klanken van Schotse muziek.</small></p>
   </br>
-  <img id="geluidlinks" src="afbeeldingen/Geluidicoon.png" alt="geluidaanL"  onclick="image(geluiduit)">
+  <img id="geluidlinks" src="afbeeldingen/Geluidicoon.png" alt="geluidaanL"  onclick="geluidaan()">
   <video id="Schotmuziek" width="400" controls autoplay muted>
     <source src="Video/Schotse_Muziek.mp4" type="video/mp4">
-    <source src="Video/Schotse_Muziek.ogg" type="video/ogg">
   </video>
-  <img id="geluidrechts" src="afbeeldingen/Geluidicoon.png" alt="geluidaanR" onclick="image()">
+  <img id="geluidrechts" src="afbeeldingen/Geluidicoon.png" alt="geluidaanR" onclick="geluidaan()">
 </div>
 
 </body>
@@ -114,7 +113,7 @@
 <script>
 var geluidL = document.getElementById("geluidlinks");
 
-function(geluiduit) {
+function(geluidaan) {
     geluidL.muted = false;
   }
 </script>
