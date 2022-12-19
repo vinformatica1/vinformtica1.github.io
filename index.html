@@ -1,119 +1,124 @@
 <!DOCTYPE html>
 <head>
-  <style>
-  body {
-    background-color: black;
-    margin: 0px;
-  }
-  .header {
-    background: url("afbeeldingen/schotland_hoofdplaatje.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 60%;
-  }
-  h1 {
-    font-size: 80px;
+	<meta charset="utf-8">
+	<meta name="author" content="Victor Visser and Thom Vermeeren">
+	<meta name="keywords" content="Scottish, Clothing, Kilt, Backpipes">
+	<title>Scottish Merchandise</title>
+	<link rel="icon" type="image/x-icon" href="afbeeldingen/triquetra.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&display=swap" rel="stylesheet">
+<style>
+body {
+	margin: 0px;
+	background-color: black;
+	font-family: dancing script;
+}
+h1 {
+    font-size: 120px;
     text-align: center;
-    font-family: sans-serif;
     color: white;
-  }
-  h2 {
-    font-size: 40px;
+    font-family: cinzel;
+	letter-spacing: 3px;
+}
+h2 {
+    font-size: 60px;
     text-align: center;
+    color: white;
     font-family: serif;
-    font-style: italic;
-    color: white;
-    height: 100px;
-  }
-  ul {
+}
+small {
+	font-size: 80px;
+}
+ul {
     background: rgba(0, 0, 0, 0.75);
-    font-size: 20px;
+    font-size: 50px;
     text-align: center;
-    padding: 10px;
     background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
     background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
     background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
-  }
-  li {
+	padding: 10px;
+}
+li {
     display: inline;
-
-    padding: 45px;
-  }
-  a {
+    padding: 10.5px 0 10.5px 0;
+}
+	li a:hover {
+    background: rgba(79, 86, 91, 0.8);
+    border-radius: 50px;
+}
+a {
     color: white;
     text-decoration: none;
-  }
-  .missie {
-    background-color: #613838;
-    text-align: center;
-    color: white;
-    border: 7px solid white;
-    border-radius: 40px
-    margin: 5px;
-    margin-top: 15px;
-  }
-  p {
-    font-size: 40px;
-    font-family: sans-serif;
-    font-weight: bold;
-  }
-  small {
-    font-size: 20px;
-    font-family: sans-serif;
-    font-style: italic;
-  }
-  .missiehead {
-    font-size: 80px;
-    font-family: sans-serif;
-    color: white;
-  }
-  img {
-    height: 150px;
-    margin: 10px;
-    font-size: 50px;
-  }
-  #geluidrechts {
-    text-align: right;
-    text-align: left;
-    -moz-transform: scale(-1, -1);
-    -o-transform: scale(-1, -1);
-    -webkit-transform: scale(-1, -1);
-    transform: scale(-1, -1);
-  }
-  </style>
+	padding: 10px 45px 20px 45px;
+}
+.home {
+  	background: url("afbeeldingen/schotland_hoofdplaatje.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 60%;
+}
+.symbol {
+    border-radius: 0px;
+    margin-right: 95%;
+}
+.title {
+	padding: 0;
+}
+
+@media only screen and (max-width: 1100px) {
+	ul {
+        margin: 0;
+        padding: 0 auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: ;
+		font-size: 20px;
+        overflow: ;
+        text-align: center;
+	}
+	li {
+		display: block;   
+        padding: 10px 0px 10px 0px;
+        text-decoration: none; 
+	}
+    .page { 
+    }
+	a {
+		padding: 10px 25px 10px 25px;
+        font-size: 40px;
+	}
+    
+	h1 {
+		font-size: 60px;
+		text-height: 100px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	small {
+		font-size: 70px;
+	}
+}
+    
+</style>
 
 </head>
 
 <body>
-  <div class="header">
+<div class="home">
+    <div class="page">
+<br />
     <h1> Scottish merchandise </h1>
-    <h2> Jouw manier om je schotsheid te tonen </h2>
-    <ul class="inhoud">
-      <li><a href="kledijpagina.html">kledij </a></li>
-      <li><a href="#">attributen </a></li>
-      <li><a href="#">cultuur </a></li>
-      <li><a href="#">klantenservice</a></li>
-      <li><a href="#">over ons </a></li>
+	<br /> <br /> <br /> <br /> <br /> <br />
+    <h2> Ye way of showing ye <small> Scottishness </small> </h2>
+    </div>
+      <ul class="inhoud">
+      <li><a href="clothing.html">clothing </a></li>
+      <li><a href="attributes.html">attributes </a></li>
+		 	<li><a href="sales.html">sales </a></li>
+      <li><a href="service.html">service</a></li>
+      <li><a href="aboutus.html">aboutus</a></li>
     </ul>
-  </div>
-  <div class="missie">
-    <h1 class="missiehead"> De missie </h1>
-    <p>Onze missie is om iedereen kennis te laten maken met de Schotse cultuur. De pracht van het schots dient iedereen te kennen. <br />
-    <small>Luister hier naar de mooie klanken van Schotse muziek.</small></p>
-  </br>
-  <img id="geluidlinks" src="afbeeldingen/Geluidicoon.png" alt="geluidaanL"  onclick="geluidaan()">
-  <video id="Schotmuziek" width="400" controls autoplay muted>
-    <source src="Video/Schotse_Muziek.mp4" type="video/mp4">
-  </video>
-  <img id="geluidrechts" src="afbeeldingen/Geluidicoon.png" alt="geluidaanR" onclick="geluidaan()">
 </div>
 
 </body>
-
-<script>
-var geluidL = document.getElementById("geluidlinks");
-
-function(geluidaan) {
-    geluidL.muted = false;
-  }
-</script>
