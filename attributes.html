@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Victor Visser and Thom Vermeeren">
+<title>Attributes</title>
+	<link rel="icon" type="image/x-icon" href="afbeeldingen/triquetra.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&display=swap" rel="stylesheet">
+<style>
+body {
+    background-color: black;
+    margin: 0px;
+	font-family: Dancing script;
+}
+.header {
+    background: url("afbeeldingen/schotland_hoofdplaatje.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 60%;
+}
+h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family: cinzel;
+    color: white;
+	letter-spacing: 3px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: serif;
+    color: white;
+    height: 75px;
+}
+ul {
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
+}
+li {
+    display: inline;
+    padding: 10px 0px 10px 0px;
+}
+a {
+    color: white;
+    text-decoration: none;
+	text-align: left;
+    padding: 10px 45px 10px 45px;
+  }
+.title:hover {
+	text-decoration: underline;
+}
+.title {
+	font-family: serif;
+	font-weight: bold;
+}
+.price {
+	font-family: cinzel;
+	font-weight: bold;
+}
+p {
+    font-size: 40px;
+    font-weight: ;
+}
+small {
+    font-size: 25px;
+    font-style: italic;
+    line-height: 0px;  
+    font-weight: bold;
+}
+li:hover {
+    background: rgba(79, 86, 91, 0.8);
+    border-radius: 25px;
+}
+.active {
+    background: rgba(16, 141, 69, 0.5);
+    border-radius: 25px;
+}
+.active:hover {
+    background: rgba(54, 129, 86, 0.8);
+}
+.scott {
+    font-style: italic;
+    font-size: 40px;
+}
+.products {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    padding-top: 15px;
+	margin: 0 auto;
+}
+img {
+	border-radius: 25px;
+}
+.kilt {
+    width: 360px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    Perspective: 1000px;
+    background-color: black;
+    border: 7px;
+    display: inline-block;
+    margin: 25px;
+    padding: 0 20px 0 20px;
+    border-radius: 25px;
+}
+.kilt-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 25px;
+}
+.kilt:hover .kilt-inner {
+    transform: rotateY(180deg);
+}
+.kilt-front, .kilt-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.kilt-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 25px;
+}
+.kilt-back {
+    background-color: #4F565B;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 25px;
+    background-size: 360px 250px;
+    background-image:url(afbeeldingen/grass.jpg);
+}
+.symbol {
+    border-radius: 0px;
+    margin-right: 95%;
+}
+.title {
+	padding: 0;
+}
+.back {
+	opacity: 0.5;
+}
+#under {
+    background-color: rgba(16, 141, 69, 1);
+	height: 250px;
+	margin: 0 auto;
+	background: linear-gradient(top, rgba(16, 141, 69, 0.7), rgba(0,0,0,0));
+    background: -webkit-linear-gradient(top, rgba(16, 141, 69, 0.7), rgba(0,0,0,0));
+    background: -moz-linear-gradient(top, rgba(16, 141, 69, 0.7), rgba(0,0,0,1));
+	text-align: bottom;
+    
+}
+#title {
+	width: 10%; 
+	float: right;
+}
+#quote {
+	font-size: 50px;
+	width: 65%;
+	text-align: center;
+}
+#divlist {
+	width: 25%; 
+	float: left;
+}
+.underitem {
+	color: white; 
+	height: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.kilt {
+		margin-left: 21%;
+	}
+	a {
+		padding: 10px 30px 10px 30px;
+	}
+}
+</style>
+
+</head>
+
+<body>
+  <div class="header">
+    <br />
+    <h1> <a href="index.html">Scottish merchandise </a> </h1>
+    <h2> Ye way of showing ye <small class="scott">Scottishness</small></h2>
+    <ul class="inhoud">
+      <li><a href="clothing.html">clothing </a></li>
+      <li class="active"><a href="attributes.html">attributes </a></li>
+			<li><a href="sales.html">sales </a></li>
+      <li><a href="service.html">service</a></li>
+      <li><a href="aboutus.html">about us</a></li>
+    </ul>
+  </div>
+<div style="margin: 0 auto; width: 80%; padding: 20px;">
+<div class="products">
+  <div class="kilt">
+    <div class="kilt-inner">
+      <div class="kilt-front">
+        <img src="afbeeldingen/table.jpg" style="width:360px;height:250px">
+      </div>
+      <div class="kilt-back">
+        <p><a class="title" href="table.html">Mead Table </a><br />
+          <span class="price">€800</span><br />
+          <small>A Mead Table for ye drouth throat.</small>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="kilt">
+    <div class="kilt-inner">
+      <div class="kilt-front">
+        <img src="afbeeldingen/book.jpg" style="width:360px;height:250px">
+      </div>
+      <div class="kilt-back">
+        <p><a class="title" href="book.html">Ancient Tome</a><br />
+          <span class="price">€4.000</span><br />
+          <small>An Ancient Tome for ye gain of eòlas.</small>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="kilt">
+    <div class="kilt-inner">
+      <div class="kilt-front">
+        <img src="afbeeldingen/seeds.jpg" style="width:360px;height:250px">
+      </div>
+      <div class="kilt-back">
+        <p><a class="title" href="seeds.html">Enchanted Seeds </a><br />
+          <span class="price">€86.000</span><br />
+          <small>Enchanted Seeds for ye dazzling spells.</small>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="kilt">
+    <div class="kilt-inner">
+      <div class="kilt-front">
+        <img src="afbeeldingen/beer.jpg" style="width:360px;height:250px">
+      </div>
+      <div class="kilt-back">
+        <p><a class="title" href="beer.html">Scottish Mead </a><br />
+          <span class="price">€800</span><br />
+          <small>Scottish Mead for ye drouth throat.</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div id="under">
+	<div id="title" class="underitem">
+		<a href="index.html"><img id="symbol" src="afbeeldingen/triquetra.png" style="width:100px; height:100px"></a>
+	</div>
+	<div id="divlist" class="underitem">
+		Phone number: +44 6 65654545<br />
+		Adress: Abbey Drive 13<br />
+		Postal code: G14 9JP
+	</div>
+	<div id="quote" class="underitem">"Whit's fur ye'll no go past ye."</div>
+</div>
+
+
+
+
+</body>

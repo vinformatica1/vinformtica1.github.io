@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Victor Visser and Thom Vermeeren">
+<title>Service</title>
+	<link rel="icon" type="image/x-icon" href="afbeeldingen/triquetra.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&display=swap" rel="stylesheet">
+<style>
+body {
+    background-color: black;
+    margin: 0px;
+	font-family: Dancing script;
+}
+.header {
+    background: url("afbeeldingen/schotland_hoofdplaatje.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 60%;
+}
+h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+	font-family: cinzel;
+	letter-spacing: 3px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: serif;
+    color: white;
+    height: 75px;
+}
+ul {
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
+}
+li {
+    display: inline;
+    padding: 10px 0px 10px 0px;
+}
+a {
+    color: white;
+    text-decoration: none;
+		padding: 10px 45px 10px 45px;
+}
+p {
+    font-size: 40px;
+    font-family: serif;
+    font-weight: bold;
+}
+small {
+    font-size: 20px;
+    font-family: serif;
+    font-style: italic;
+    line-height: 0px;
+}
+li:hover {
+    background: rgba(79, 86, 91, 0.8);
+    border-radius: 25px;
+}
+.active {
+    background: rgba(16, 141, 69, 0.5);
+    border-radius: 25px;
+}
+.active:hover {
+    background: rgba(54, 129, 86, 0.8);
+      }
+  .scott {
+    font-style: italic;
+    font-size: 40px;
+  }
+.container {
+    padding: 50px;
+    background-color: black;
+}
+select {
+    border-radius: 25px;
+    color: white;
+    background-color: #4F565B;
+}
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  padding-right: 0;
+  display: inline-block;
+  border: none;
+  background: #4F565B;
+  color: white;
+  border-radius: 25px;
+}
+input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  padding-right: 0;
+  display: inline-block;
+  border: none;
+  background: #4F565B;
+  color: white;
+  border-radius: 25px;
+}
+input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  padding-right: 0;
+  display: inline-block;
+  border: none;
+  background: #4F565B;
+  color: white;
+  border-radius: 25px;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  /*Hierdoor zijn de bullets weggehaald en kunnen deze zelf worden gemaakt*/
+  color: #000;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.25em solid rgba(16, 141, 69, 1);
+  border-radius: 50%;
+  transform: translateY(0.27em);
+  place-content: center;
+}
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(#000);
+}
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+input[type="radio"]:focus {
+  outline: max(.1px, 0.1em) solid #fff;
+  outline-offset: max(.1px, 0em);
+}
+.form-control + .form-control {
+  margin-top: 1em;
+}
+.descr {
+    color: white;
+	padding: 0;
+    font-family: serif;
+}
+.invul {
+    padding: 10px 0;
+    color: white;
+}
+hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+  background-color: white;
+}
+::placeholder {
+	color: white;
+    font-family: serif;
+}
+label {
+color: white;
+font-size: 25px;
+font-family: cinzel;
+}
+.symbol {
+    border-radius: 0px;
+    margin-right: 95%;
+}
+.submit {
+    font-size: 30px;
+    background-color: rgba(16, 141, 69, 0.8);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px 15px 5px 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.submit:hover {
+     background-color: rgba(16, 141, 69, 0.5);
+	cursor: pointer;
+}
+.submit:active {
+    background-color: rgba(16, 141, 69, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.4);
+    transform: translateY(4px);
+}
+.space {
+	padding-top: 7px;
+	padding-bottom: 20px;
+}
+h3 {
+    font-size: 80px;
+    text-align: center;
+    font-family: cinzel;
+    color: white;
+	margin: 0;
+}
+.reason {
+	background-color: #4F565B;
+}
+.title {
+	padding: 0;
+}
+#under {
+    background-color: rgba(16, 141, 69, 1);
+	height: 250px;
+	margin: 0 auto;
+	background: linear-gradient(top, rgba(16, 141, 69, 0.7), rgba(0,0,0,0));
+    background: -webkit-linear-gradient(top, rgba(16, 141, 69, 0.7), rgba(0,0,0,0));
+    background: -moz-linear-gradient(top, rgba(16, 141, 69, 0.7), rgba(0,0,0,1));
+	text-align: bottom;
+    
+}
+#title {
+	width: 10%; 
+	float: right;
+}
+#quote {
+	font-size: 50px;
+	width: 65%;
+	text-align: center;
+}
+#divlist {
+	width: 25%; 
+	float: left;
+}
+.underitem {
+	color: white; 
+	height: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.descr {
+		font-size: 20px;
+	}
+	.container {
+		padding-top: 0px;
+	}
+	a {
+		padding: 10px 30px 10px 30px;
+	}
+}
+</style>
+
+</head>
+
+<body>
+  <div class="header">
+    <br />
+    <h1> <a href="index.html">Scottish merchandise </a> </h1>
+    <h2> Ye way of showing ye <small class="scott">Scottishness</small></h2>
+    <ul class="inhoud">
+      <li><a href="clothing.html">clothing </a></li>
+      <li><a href="attributes.html">attributes </a></li>
+			<li><a href="sales.html">sales </a></li>
+      <li class="active"><a href="service.html">service</a></li>
+      <li><a href="aboutus.html">about us</a></li>
+    </ul>
+  </div>
+
+<h3>Contact</h3>
+<div id="formulier">
+	<form>
+	<div class="container">
+	<p class="descr"> If there are any questions regarding your purchase on this website, please fill in this contact form. We will contact you as soon as possible. </p>
+	<hr>
+		<label> Firstname: </label>
+	<div class="space">
+		<input id="firstname" type="text" name="firstname" placeholder= "Firstname" size="15" required onkeyup="changecolourfirst()"/>
+	</div>
+		<label> Lastname: </label>
+	<div class="space">
+		<input id="lastname" type="text" name="lastname" placeholder="Lastname" size="15"required onkeyup="changecolourlast()"/>
+	</div>
+        <label>Your email: </label>
+	<div class="space">
+		<input id="email" type="email" name="email" placeholder= "Your email" size="15" required onkeyup="changecolouremail()"/>
+	</div>
+		<label>Your phone number: </label>
+	<div class="space">
+		<input id="number" type="tel" name="phone number" placeholder= "Your phone number" size="15" onkeyup="changecolournumber()"/>
+	</div>
+	<div class="invul">
+	<label>
+		Reason for contact:
+	</label>
+	<br />
+		<input class="reason" type="radio" value="Purchase problems" name="reason"> Purchase problems
+		<br />
+		<input class="reason" type="radio" value="Delivering problems" name="reason"> Delivering problems
+		<br />
+		<input class="reason" type="radio" value="Product warranty" name="reason"> Product warranty
+		<br />
+		<input class="reason" type="radio" value="Other" name="reason" checked> Other
+	</div>
+	<br />
+	<label> Description: </label>
+	<div class="space">
+	<input id="problem" class="problem" type="text" name="problem" placeholder="Describe your problem" size="15"required onkeyup="changecolourprob()"/>
+	</div>
+	<br />
+    <button onclick="submitbutton()" class="submit" id="submit" width="100" height="50" alt="submit">Submit
+	</button>
+	</div>
+</form>
+</div>
+
+<br /><br /><br /><br /><br />
+<div id="under">
+	<div id="title" class="underitem">
+		<a href="index.html"><img id="symbol" src="afbeeldingen/triquetra.png" style="width:100px; height:100px"></a>
+	</div>
+	<div id="divlist" class="underitem">
+		Phone number: +44 6 65654545<br />
+		Adress: Abbey Drive 13<br />
+		Postal code: G14 9JP
+	</div>
+	<div id="quote" class="underitem">"Whit's fur ye'll no go past ye."</div>
+</div>
+
+
+<script>
+function changecolourfirst() {
+      if (document.getElementById("firstname").value !== "") {
+         document.getElementById("firstname").style.background = "rgba(16, 141, 69, 0.8)";
+      } else {
+         document.getElementById("firstname").style.background = "";
+      }
+   }
+
+function changecolourlast() {
+      if (document.getElementById("lastname").value !== "") {
+         document.getElementById("lastname").style.background = "rgba(16, 141, 69, 0.8)";
+      } else {
+         document.getElementById("lastname").style.background = "";
+      }
+   }
+
+function changecolouremail() {
+      if (document.getElementById("email").value !== "") {
+         document.getElementById("email").style.background = "rgba(16, 141, 69, 0.8)";
+      } else {
+         document.getElementById("email").style.background = "";
+      }
+   }
+
+function changecolournumber() {
+      if (document.getElementById("number").value !== "") {
+         document.getElementById("number").style.background = "rgba(16, 141, 69, 0.8)";
+      } else {
+         document.getElementById("number").style.background = "";
+      }
+   }
+function changecolourprob() {
+	       if (document.getElementById("problem").value !== "") {
+	          document.getElementById("problem").style.background = "rgba(16, 141, 69, 0.8)";
+	       } else {
+	          document.getElementById("problem").style.background = "";
+	       }
+	    }
+</script>
+</body>
